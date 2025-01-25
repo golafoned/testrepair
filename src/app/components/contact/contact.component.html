@@ -1,0 +1,37 @@
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>{{ 'contact.header' | translate }}</h2>
+    <div class="contact-content">
+      <div class="contact-form">
+        <h3>{{ 'contact.writeToUs' | translate }}</h3>
+        <form (submit)="onSubmit()">
+          <input 
+            type="text" 
+            [(ngModel)]="name" 
+            name="name" 
+            [placeholder]="'contact.namePlaceholder' | translate" 
+            required>
+            <input 
+            type="text" 
+            [(ngModel)]="phone" 
+            name="phone" 
+            [placeholder]="'contact.phonePlaceholder' | translate" 
+            required 
+            mask="(000) 000-0000" 
+            title="Please enter a valid phone number">
+          <textarea 
+            [(ngModel)]="message" 
+            name="message" 
+            [placeholder]="'contact.messagePlaceholder' | translate" 
+            rows="5" 
+            required></textarea>
+          <button type="submit" [disabled]="isLoading">
+            {{ isLoading ? ('contact.sending' | translate) : ('contact.submit' | translate) }}
+          </button>
+          <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
+          <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

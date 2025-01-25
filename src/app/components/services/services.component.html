@@ -1,0 +1,14 @@
+<section class="services" id="services">
+  <div class="container">
+    <h2>{{ 'services.header' | translate }}</h2>
+    <div class="services-grid">
+      <div *ngFor="let service of displayedServices" class="service-card" [ngClass]="{'faded': !service.visible}">
+        <img [src]="service.icon" [alt]="service.title">
+        <h3>{{ service.title | translate }}</h3>
+        <p>{{ service.description | translate }}</p>
+      </div>
+    </div>
+    <button *ngIf="showAll" (click)="showLess()" class="toggle-button">{{ 'services.showLess' | translate }}</button>
+    <button *ngIf="!showAll" (click)="showMore()" class="toggle-button">{{ 'services.showMore' | translate }}</button>
+  </div>
+</section>

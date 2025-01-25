@@ -1,0 +1,12 @@
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <h2>{{ 'testimonials.header' | translate }}</h2>
+    <div class="testimonials-scroll">
+      <div *ngFor="let testimonial of testimonials" class="testimonial">
+        <img [src]="testimonial.icon" alt="{{ testimonial.name }}">
+        <h3>{{ testimonial.name | translate }}</h3>
+        <p>{{ testimonial.feedback | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>

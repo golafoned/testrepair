@@ -1,0 +1,26 @@
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .footer-details {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+  }
+  
+  .footer-info h3 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-info p {
+    margin: 5px 15px; /* Add horizontal margin for spacing */
+  }

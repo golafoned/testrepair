@@ -1,0 +1,78 @@
+.hero {
+  display: flex;
+  flex-direction: column; /* Зміна на вертикальне вирівнювання */
+  align-items: center; /* Центрування вмісту */
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+}
+
+.hero-header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Центрування контактної інформації */
+  padding: 1rem 0; /* Відступи для верхньої частини */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання на мобільних */
+  align-items: center; /* Центрування контактної інформації */
+  gap: 1rem; /* Відстань між елементами */
+}
+
+.phone {
+  color: #ffc107;
+  text-decoration: none;
+  font-size: 1.1rem; /* Збільшення шрифту для телефонів */
+}
+
+.repair-button {
+  background-color: #ffc107;
+  color: #343a40;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e0a800;
+  }
+}
+
+.text-content {
+  max-width: 600px;
+  text-align: center; /* Центрування тексту */
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem; /* Зменшення відступів на мобільних */
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem; /* Зменшення шрифту заголовка на мобільних */
+  }
+
+  .text-content p {
+    font-size: 1rem; /* Зменшення шрифту абзацу на мобільних */
+  }
+
+  .contact-info {
+    flex-direction: column; /* Вертикальне вирівнювання на мобільних */
+    align-items: center; /* Центрування контактної інформації */
+  }
+}

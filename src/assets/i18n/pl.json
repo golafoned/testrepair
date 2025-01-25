@@ -1,0 +1,135 @@
+{
+  "navbar": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "about": "O nas",
+    "testimonials": "Referencje",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Naprawa sprzętu AGD w Twoim mieście",
+    "subtitle": "Szybko, jakościowo i z gwarancją!",
+    "orderRepair": "Zamów naprawę"
+  },
+  "contact": {
+    "header": "Skontaktuj się z nami",
+    "contactInfo": "Informacje kontaktowe",
+    "workingHours": "Godziny pracy",
+    "workingHoursValue": "Pon-Pt: 9:00 - 18:00",
+    "address": "Adres",
+    "addressValue": "ul. Przykład 1, Kijów, Ukraina",
+    "phone": "Telefon",
+    "phonePlaceholder": "Twój numer telefonu",
+    "email": "Email",
+    "writeToUs": "Napisz do nas",
+    "namePlaceholder": "Twoje imię",
+    "emailPlaceholder": "Twój email",
+    "messagePlaceholder": "Twoja wiadomość",
+    "submit": "Wyślij",
+    "sending": "Wysyłanie...",
+    "success": "Twoja wiadomość została pomyślnie wysłana!",
+    "error": "Wystąpił błąd podczas wysyłania Twojej wiadomości."
+  },
+  "about": {
+    "header": "O nas",
+    "servicesList": {
+      "masterVisit": {
+        "title": "Wizyta mistrza i diagnostyka",
+        "description": "Darmowe przy uzgodnieniu naprawy.",
+        "icon": "assets/icons/diagnostics.png"
+      },
+      "warranty": {
+        "title": "Gwarancja do 2 lat",
+        "description": "Na wszystkie rodzaje prac i użyte części.",
+        "icon": "assets/icons/guarantee.png"
+      },
+      "fastRepair": {
+        "title": "Szybka naprawa",
+        "description": "Wykonujemy prace w ciągu jednego dnia po wezwaniu.",
+        "icon": "assets/icons/fast-repair.png"
+      },
+      "originalParts": {
+        "title": "Części oryginalne",
+        "description": "Używamy tylko certyfikowanych komponentów.",
+        "icon": "assets/icons/original-parts.png"
+      },
+      "experiencedMasters": {
+        "title": "Doświadczeni mistrzowie",
+        "description": "Ponad 5-letnie doświadczenie i profesjonalne przygotowanie.",
+        "icon": "assets/icons/experienced-team.png"
+      },
+      "largestService": {
+        "title": "Największy serwis",
+        "description": "Działamy od 2003 roku w Kijowie i Warszawie.",
+        "icon": "assets/icons/largest-service.png"
+      }
+    }
+  },
+  "services": {
+    "header": "Nasze usługi",
+    "showMore": "Pokaż więcej",
+    "showLess": "Pokaż mniej",
+    "servicesList": {
+      "fridge": {
+        "title": "Naprawa lodówek",
+        "description": "Diagnoza i naprawa wszelkich usterek lodówek."
+      },
+      "washingMachine": {
+        "title": "Naprawa pralek",
+        "description": "Szybka naprawa pralek wszystkich marek."
+      },
+      "dishwasher": {
+        "title": "Naprawa zmywarek",
+        "description": "Profesjonalna naprawa zmywarek z gwarancją."
+      },
+      "airConditioner": {
+        "title": "Naprawa klimatyzatorów",
+        "description": "Serwis i naprawa wszelkich klimatyzatorów."
+      },
+      "cooktop": {
+        "title": "Naprawa płyt grzewczych",
+        "description": "Naprawa elektrycznych i gazowych płyt grzewczych."
+      },
+      "electricStove": {
+        "title": "Naprawa kuchenek elektrycznych",
+        "description": "Usuwanie usterek w kuchenkach elektrycznych."
+      },
+      "oven": {
+        "title": "Naprawa piekarników",
+        "description": "Wysokiej jakości naprawa piekarników z użyciem oryginalnych części."
+      },
+      "freezer": {
+        "title": "Naprawa zamrażarek",
+        "description": "Naprawa zamrażarek wszystkich modeli i rozmiarów."
+      },
+      "vacuumCleaner": {
+        "title": "Naprawa odkurzaczy",
+        "description": "Przywrócimy życie Twojemu odkurzaczowi każdej marki."
+      },
+      "dryer": {
+        "title": "Naprawa suszarek do ubrań",
+        "description": "Szybka naprawa usterek suszarek do ubrań."
+      }
+    }
+  },
+  "brands": {
+    "title": "Brenady, które naprawiamy"
+  },
+  "testimonials": {
+    "header": "Opinie klientów",
+    "testimonials": [
+      {
+        "name": "Ivan Petrov",
+        "feedback": "Bardzo zadowolony z usługi! Mistrz szybko przyjechał i naprawił moją lodówkę. Polecam wszystkim!"
+      },
+      {
+        "name": "Olena Kowalenko",
+        "feedback": "Pralka działa jak nowa! Wielkie dzięki za szybkość i jakość."
+      },
+      {
+        "name": "Mykola Iwanchuk",
+        "feedback": "Najlepszy serwis w mieście! Wszystko jasne, szybkie i w rozsądnej cenie."
+      }
+    ]
+  }
+}

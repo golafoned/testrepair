@@ -1,0 +1,212 @@
+{
+  "navbar": {
+    "home": "Головна",
+    "services": "Послуги",
+    "about": "Про нас",
+    "testimonials": "Відгуки",
+    "contact": "Контакти"
+  },
+  "hero": {
+    "title": "Ремонт побутової техніки у вашому місті",
+    "subtitle": "Швидко, якісно та з гарантією!",
+    "orderRepair": "Замовити ремонт"
+  },
+  "contact": {
+    "header": "Зв'яжіться з нами",
+    "contactInfo": "Контактна інформація",
+    "workingHours": "Години роботи",
+    "workingHoursValue": "Пн-Пт: 9:00 - 18:00",
+    "address": "Адреса",
+    "addressValue": "вул. Прикладна, 1, Київ, Україна",
+    "phone": "Телефон",
+    "phonePlaceholder": "Ваш номер телефону",
+    "email": "Email",
+    "writeToUs": "Напишіть нам",
+    "namePlaceholder": "Ваше ім'я",
+    "emailPlaceholder": "Ваш email",
+    "messagePlaceholder": "Ваше повідомлення",
+    "submit": "Відправити",
+    "sending": "Відправка...",
+    "success": "Ваше повідомлення надіслано успішно!",
+    "error": "Сталася помилка при відправці вашого повідомлення."
+  },
+  "brands": {
+    "title": "Бренди, які ми ремонтуємо",
+    "items": [
+      {
+        "name": "Samsung",
+        "description": "Провідний бренд електроніки.",
+        "icon": "assets/brands/samsung.png"
+      },
+      {
+        "name": "LG",
+        "description": "Інноваційні рішення в побутовій техніці.",
+        "icon": "assets/brands/lg.png"
+      },
+      {
+        "name": "Bosch",
+        "description": "Німецька якість та надійність.",
+        "icon": "assets/brands/bosch.png"
+      },
+      {
+        "name": "Indesit",
+        "description": "Практичні та функціональні пристрої.",
+        "icon": "assets/brands/indesit.png"
+      },
+      {
+        "name": "Ariston",
+        "description": "Сучасні рішення для вашого дому.",
+        "icon": "assets/brands/ariston.png"
+      },
+      {
+        "name": "Fujitsu",
+        "description": "Технології та продуктивність в одному.",
+        "icon": "assets/brands/fujitsu.png"
+      },
+      {
+        "name": "Electrolux",
+        "description": "Висока якість і стиль.",
+        "icon": "assets/brands/electrolux.png"
+      },
+      {
+        "name": "Liebherr",
+        "description": "Інноваційні холодильники та морозильники.",
+        "icon": "assets/brands/liebherr.png"
+      },
+      {
+        "name": "Miele",
+        "description": "Розкішна побутова техніка.",
+        "icon": "assets/brands/miele.png"
+      },
+      {
+        "name": "Candy",
+        "description": "Доступні ціни та гарна якість.",
+        "icon": "assets/brands/candy.png"
+      },
+      {
+        "name": "Whirlpool",
+        "description": "Інноваційні рішення для вашого дому.",
+        "icon": "assets/brands/whirlpool.png"
+      },
+      {
+        "name": "Zanussi",
+        "description": "Функціональність і стиль в одному.",
+        "icon": "assets/brands/zanussi.png"
+      },
+      {
+        "name": "AEG",
+        "description": "Німецька якість та інновації.",
+        "icon": "assets/brands/aeg.png"
+      },
+      {
+        "name": "Ardo",
+        "description": "Доступні ціни та гарна якість.",
+        "icon": "assets/brands/ardo.png"
+      },
+      {
+        "name": "Beko",
+        "description": "Добрі пристрої за розумною ціною.",
+        "icon": "assets/brands/beko.png"
+      }
+    ]
+  },
+  "about": {
+    "header": "Про нас",
+    "servicesList": {
+      "masterVisit": {
+        "title": "Виїзд майстра та діагностика",
+        "description": "Безкоштовно при погодженні на ремонт.",
+        "icon": "assets/icons/diagnostics.png"
+      },
+      "warranty": {
+        "title": "Гарантія до 2 років",
+        "description": "На всі види робіт та використані запчастини.",
+        "icon": "assets/icons/guarantee.png"
+      },
+      "fastRepair": {
+        "title": "Швидкий ремонт",
+        "description": "Виконуємо роботи протягом доби після виклику.",
+        "icon": "assets/icons/fast-repair.png"
+      },
+      "originalParts": {
+        "title": "Оригінальні запчастини",
+        "description": "Використовуємо тільки сертифіковані компоненти.",
+        "icon": "assets/icons/original-parts.png"
+      },
+      "experiencedMasters": {
+        "title": "Досвідчені майстри",
+        "description": "Більше 5 років досвіду та професійна підготовка.",
+        "icon": "assets/icons/experienced-team.png"
+      },
+      "largestService": {
+        "title": "Найбільший сервіс",
+        "description": "Працюємо з 2003 року у Києві та Варшаві.",
+        "icon": "assets/icons/largest-service.png"
+      }
+    }
+  },
+  "services": {
+    "header": "Наші послуги",
+    "showMore": "Показати більше",
+    "showLess": "Показати менше",
+    "servicesList": {
+      "fridge": {
+        "title": "Ремонт холодильників",
+        "description": "Діагностика та ремонт будь-яких несправностей холодильників."
+      },
+      "washingMachine": {
+        "title": "Ремонт пральних машин",
+        "description": "Оперативний ремонт пральних машин усіх марок."
+      },
+      "dishwasher": {
+        "title": "Ремонт посудомийних машин",
+        "description": "Професійний ремонт посудомийних машин із гарантією."
+      },
+      "airConditioner": {
+        "title": "Ремонт кондиціонерів",
+        "description": "Обслуговування та ремонт будь-яких кондиціонерів."
+      },
+      "cooktop": {
+        "title": "Ремонт варильних панелей",
+        "description": "Ремонт електричних і газових варильних панелей."
+      },
+      "electricStove": {
+        "title": "Ремонт електроплит",
+        "description": "Виправлення несправностей електричних плит."
+      },
+      "oven": {
+        "title": "Ремонт духових шаф",
+        "description": "Якісний ремонт духових шаф із використанням оригінальних деталей."
+      },
+      "freezer": {
+        "title": "Ремонт морозильних камер",
+        "description": "Ремонт морозильних камер будь-яких моделей і розмірів."
+      },
+      "vacuumCleaner": {
+        "title": "Ремонт пилососів",
+        "description": "Повернемо до життя ваш пилосос будь-якої моделі."
+      },
+      "dryer": {
+        "title": "Ремонт сушильних машин",
+        "description": "Оперативне виправлення несправностей сушильних машин."
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Відгуки клієнтів",
+    "testimonials": [
+      {
+        "name": "Іван Петров",
+        "feedback": "Дуже задоволений сервісом! Майстер швидко приїхав і відремонтував мій холодильник. Рекомендую всім!"
+      },
+      {
+        "name": "Олена Коваленко",
+        "feedback": "Пральна машина працює як нова! Велике спасибі за оперативність та якість."
+      },
+      {
+        "name": "Микола Іванчук",
+        "feedback": "Найкращий сервіс у місті! Все чітко, швидко і за адекватну ціну."
+      }
+    ]
+  }
+}

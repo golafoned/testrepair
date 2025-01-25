@@ -1,0 +1,129 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Appliance Repair in Your City",
+    "subtitle": "Fast, quality, and guaranteed!",
+    "orderRepair": "Order Repair"
+  },
+  "contact": {
+    "header": "Contact Us",
+    "contactInfo": "Contact Information",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Mon-Fri: 9:00 AM - 6:00 PM",
+    "address": "Address",
+    "addressValue": "1 Example St, Kyiv, Ukraine",
+    "phone": "Phone",
+    "phonePlaceholder": "Your Phone Number", 
+    "email": "Email",
+    "writeToUs": "Write to Us",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "There was an error sending your message."
+  },
+  "about": {
+    "header": "About Us",
+    "servicesList": {
+      "masterVisit": {
+        "title": "Master Visit and Diagnostics",
+        "description": "Free with agreement for repair."
+      },
+      "warranty": {
+        "title": "Up to 2 Years Warranty",
+        "description": "On all types of work and used parts."
+      },
+      "fastRepair": {
+        "title": "Fast Repair",
+        "description": "We complete work within a day after the call."
+      },
+      "originalParts": {
+        "title": "Original Parts",
+        "description": "We only use certified components."
+      },
+      "experiencedMasters": {
+        "title": "Experienced Masters",
+        "description": "Over 5 years of experience and professional training."
+      },
+      "largestService": {
+        "title": "Largest Service",
+        "description": "Operating since 2003 in Kyiv and Warsaw."
+      }
+    }
+  },
+  "brands": {
+    "title": "Brands We Repair"
+  },
+  "services": {
+    "header": "Our Services",
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "servicesList": {
+      "fridge": {
+        "title": "Fridge Repair",
+        "description": "Diagnostics and repair of any fridge malfunctions."
+      },
+      "washingMachine": {
+        "title": "Washing Machine Repair",
+        "description": "Quick repair of all brands of washing machines."
+      },
+      "dishwasher": {
+        "title": "Dishwasher Repair",
+        "description": "Professional dishwasher repair with a warranty."
+      },
+      "airConditioner": {
+        "title": "Air Conditioner Repair",
+        "description": "Service and repair of any air conditioners."
+      },
+      "cooktop": {
+        "title": "Cooktop Repair",
+        "description": "Repair of electric and gas cooktops."
+      },
+      "electricStove": {
+        "title": "Electric Stove Repair",
+        "description": "Fixing issues with electric stoves."
+      },
+      "oven": {
+        "title": "Oven Repair",
+        "description": "Quality oven repair using original parts."
+      },
+      "freezer": {
+        "title": "Freezer Repair",
+        "description": "Repair of freezers of any models and sizes."
+      },
+      "vacuumCleaner": {
+        "title": "Vacuum Cleaner Repair",
+        "description": "Bringing your vacuum cleaner back to life."
+      },
+      "dryer": {
+        "title": "Dryer Repair",
+        "description": "Quick fixing of dryer malfunctions."
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Customer Reviews",
+    "testimonials": [
+      {
+        "name": "Ivan Petrov",
+        "feedback": "Very satisfied with the service! The master arrived quickly and repaired my refrigerator. I recommend it to everyone!"
+      },
+      {
+        "name": "Olena Kovalenko",
+        "feedback": "The washing machine works like new! Thank you for your promptness and quality."
+      },
+      {
+        "name": "Mykola Ivanchuk",
+        "feedback": "The best service in the city! Everything is clear, fast, and at a reasonable price."
+      }
+    ]
+  }
+}
