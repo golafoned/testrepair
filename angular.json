@@ -11,11 +11,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/repair-site",
+            "outputPath": {
+              "base": "dist/repair-site"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -27,13 +28,13 @@
             "styles": [
               "src/styles.css",
                "node_modules/aos/dist/aos.css",
-               "node_modules/primeng/resources/themes/saga-blue/theme.css",
-               "node_modules/primeng/resources/primeng.min.css",
-               "node_modules/primeicons/primeicons.css"
+               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js"
-            ]
+            ],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -52,9 +53,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -94,7 +93,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/aos/dist/aos.css"
+              "node_modules/aos/dist/aos.css",
+                "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js"
