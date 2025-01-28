@@ -1,106 +1,20 @@
-.navbar {
-  background-color: #f8f9fa;
-  padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #007bff;
-}
-
-.menu {
+/* Add this to your styles.css or the component's CSS file */
+.menu ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  transition: max-height 0.3s ease-out;
-  overflow: hidden; 
+  margin: 0;
+  padding: 0;
 }
 
-.menu.active {
-  display: flex; 
-  max-height: 500px; 
+.menu li {
+  margin: 0 1rem;
 }
 
 .menu li a {
-  text-decoration: none;
-  color: #343a40;
-  font-weight: 500;
-
-  &:hover {
-    color: #007bff;
-  }
-}
-
-.language-switcher {
   display: flex;
-  gap: 0.5rem;
-
-  button {
-    background: none;
-    border: 1px solid #007bff;
-    color: #007bff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-
-    &:hover {
-      background-color: #007bff;
-      color: #fff;
-    }
-
-    &.active {
-      background-color: #007bff;
-      color: #fff;
-    }
-  }
+  align-items: center; /* Align icons and text */
 }
 
-@media (max-width: 768px) {
-  .menu {
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    right: 0;
-    background-color: #f8f9fa;
-    padding: 1rem 0;
-    z-index: 1000;
-  }
-
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-
-    .bar {
-      height: 3px;
-      width: 25px;
-      background-color: #007bff;
-      margin: 4px 0;
-    }
-  }
-
-  .menu.active {
-    display: flex; 
-  }
-
-  .language-switcher {
-    margin-top: 1rem; /* Add some space above the language switcher */
-    display: flex; /* Ensure it is displayed in mobile view */
-    justify-content: center; /* Center the buttons */
-  }
+.menu li a i {
+  margin-right: 0.5rem; /* Space between icon and text */
 }

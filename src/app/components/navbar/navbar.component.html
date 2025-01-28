@@ -1,19 +1,39 @@
-<nav class="navbar">
-  <div class="container">
-    <div class="logo">
-      <a href="#">RepairSite</a>
-    </div>
-    <div class="menu-toggle" (click)="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-    <ul class="menu" [class.active]="isMenuOpen">
-      <li><a href="#hero">{{ 'navbar.home' | translate }}</a></li>
-      <li><a href="#services">{{ 'navbar.services' | translate }}</a></li>
-      <li><a href="#about">{{ 'navbar.about' | translate }}</a></li>
-      <li><a href="#testimonials">{{ 'navbar.testimonials' | translate }}</a></li>
-      <li><a href="#contact">{{ 'navbar.contact' | translate }}</a></li>
+<p-menubar>
+  <div class="logo">
+    <a href="#">RepairSite</a>
+  </div>
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div class="menu">
+    <ul>
+      <li>
+        <a routerLink="#hero">
+          <i class="pi pi-home"></i> {{ 'navbar.home' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="#services">
+          <i class="pi pi-cog"></i> {{ 'navbar.services' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="#about">
+          <i class="pi pi-info-circle"></i> {{ 'navbar.about' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="#testimonials">
+          <i class="pi pi-star"></i> {{ 'navbar.testimonials' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="#contact">
+          <i class="pi pi-envelope"></i> {{ 'navbar.contact' | translate }}
+        </a>
+      </li>
       <li class="language-switcher">
         <button (click)="switchLang('ua')">UA</button>
         <button (click)="switchLang('en')">EN</button>
@@ -21,4 +41,4 @@
       </li>
     </ul>
   </div>
-</nav>
+</p-menubar>

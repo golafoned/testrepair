@@ -10,7 +10,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FaqComponent } from './components/faq/faq.component';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FooterComponent } from './components/footer/footer.component';
@@ -18,36 +18,44 @@ import { BrandsComponent } from './components/brands/brands.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { MenubarModule } from 'primeng/menubar';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-@NgModule({ declarations: [
-        AppComponent,
-        HeroComponent,
-        AboutComponent,
-        ServicesComponent,
-        FaqComponent,
-        TestimonialsComponent,
-        ContactComponent,
-        NavbarComponent,
-        FooterComponent,
-        BrandsComponent
-    ],
-    bootstrap: [AppComponent], imports: [
-      BrowserModule,
-        InputTextModule,
-        ButtonModule,
-        FormsModule,
-        AppRoutingModule,
-        NgxMaskDirective,
-        NgxMaskPipe,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
-        })], providers: [provideNgxMask(), provideHttpClient(withInterceptorsFromDi())] })
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeroComponent,
+    AboutComponent,
+    ServicesComponent,
+    FaqComponent,
+    TestimonialsComponent,
+    ContactComponent,
+    NavbarComponent,
+    FooterComponent,
+    BrandsComponent
+  ],
+  imports: [
+    BrowserModule,
+    InputTextModule,
+    ButtonModule,
+    FormsModule,
+    MenubarModule,
+    HttpClientModule,
+    AppRoutingModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
+  ],
+  providers: [provideNgxMask()],
+  bootstrap: [AppComponent]
+})
 export class AppModule { }
