@@ -17,8 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrandsComponent } from './components/brands/brands.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { InputTextModule } from 'primeng/inputtext';
-import { InputTextareaModule } from 'primeng/inputtextarea';
 import { ButtonModule } from 'primeng/button';
+import { InputTextareaModule  } from 'primeng/textarea';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,9 +27,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    InputTextModule,
-    InputTextareaModule,
-    ButtonModule,
     HeroComponent,
     AboutComponent,
     ServicesComponent,
@@ -42,6 +39,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     BrowserModule,
+    InputTextModule,
+    ButtonModule,
+    InputTextareaModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
