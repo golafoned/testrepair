@@ -7,6 +7,7 @@ import { TelegramService } from '../../servicesBot/telegram.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  isOpen = false;
   name: string = '';
   email: string = '';
   phone: string = '';
@@ -17,7 +18,31 @@ export class ContactComponent {
 
   constructor(private telegramService: TelegramService) {}
 
+  openModal() {
+    this.isOpen = true;
+  }
+
+  closeModal() {
+    this.isOpen = false;
+    this.resetForm();
+  }
+
+  resetForm() {
+    this.name = '';
+    this.email = '';
+    this.phone = '';
+    this.message = '';
+    this.successMessage = '';
+    this.errorMessage = '';
+  }
+
   onSubmit() {
+    const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+    if (!phonePattern.test(this.phone)) {
+      this.errorMessage = 'Будь ласка, введіть номер телефону у форматі (123) 456-7890.';
+      return;
+    }
+    
     if (!this.name || !this.email || !this.phone || !this.message) {
       this.errorMessage = 'Будь ласка, заповніть усі поля.';
       return;
@@ -31,7 +56,7 @@ export class ContactComponent {
       <b>Нове повідомлення:</b>
       <b>Ім'я:</b> ${this.name}
       <b>Email:</b> ${this.email}
-      <b>Телефон:</b> ${this.phone}  // Include phone in the message
+      <b>Телефон:</b> ${this.phone}
       <b>Повідомлення:</b> ${this.message}
     `;
 
@@ -39,10 +64,8 @@ export class ContactComponent {
       next: () => {
         this.isLoading = false;
         this.successMessage = 'Повідомлення надіслано успішно!';
-        this.name = '';
-        this.email = '';
-        this.phone = ''; 
-        this.message = '';
+        this.resetForm();
+        this.closeModal();
       },
       error: () => {
         this.isLoading = false;

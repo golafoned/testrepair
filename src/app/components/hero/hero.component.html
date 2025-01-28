@@ -1,17 +1,12 @@
 <section class="hero" id="hero">
-  <div class="hero-header">
-    <div class="container">
-      <div class="contact-info">
-        <a href="tel:+380123456789" class="phone">+380 95 345 67 89</a>
-        <a href="tel:+380987654321" class="phone">+380 98 765 43 21</a>
-        <button class="repair-button" (click)="scrollToForm()">{{ 'hero.orderRepair' | translate }}</button>
-      </div>
-    </div>
-  </div>
   <div class="container">
     <div class="text-content">
       <h1>{{ 'hero.title' | translate }}</h1>
-      <p>{{ 'hero.subtitle' | translate }}</p>
+      <div class="contact-info">
+        <p><a href="tel:+1234567890">Life: +380 (65) 567-89-10</a></p>
+        <p><a href="tel:+0987654321">Kyivstar: +380 (97) 654-32-11</a></p>
+      </div>
+      <button class="repair-button" (click)="scrollToForm()">{{ 'hero.orderRepair' | translate }}</button>
     </div>
   </div>
 </section>

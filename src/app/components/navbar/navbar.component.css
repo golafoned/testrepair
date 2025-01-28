@@ -82,7 +82,7 @@
   }
 
   .menu-toggle {
-    display: flex ;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
 
@@ -99,6 +99,8 @@
   }
 
   .language-switcher {
-    display: none;
+    margin-top: 1rem; /* Add some space above the language switcher */
+    display: flex; /* Ensure it is displayed in mobile view */
+    justify-content: center; /* Center the buttons */
   }
 }

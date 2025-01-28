@@ -1,12 +1,12 @@
 <section class="about" id="about">
-    <div class="container">
-      <h2 class="section-title">{{ 'about.header'| translate }}</h2>
-      <div class="about-content">
-        <div *ngFor="let item of items" class="about-item">
-          <img [src]="item.icon" [alt]="item.title" />
-          <h3>{{ item.title | translate }}</h3>
-          <p>{{ item.description | translate}}</p>
-        </div>
+  <div class="container">
+    <h2>{{ 'about.header' | translate }}</h2>
+    <div class="about-content">
+      <div *ngFor="let item of items" class="about-item">
+        <img [src]="item.icon" [alt]="item.titleKey | translate" />
+        <h3>{{ item.titleKey | translate }}</h3>
+        <p>{{ item.descriptionKey | translate }}</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>

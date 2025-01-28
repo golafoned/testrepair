@@ -23,7 +23,6 @@ export class ServicesComponent {
     { icon: 'assets/icons/electric-stove.png', title: 'services.servicesList.electricStove.title', description: 'services.servicesList.electricStove.description' },
     { icon: 'assets/icons/oven.png', title: 'services.servicesList.oven.title', description: 'services.servicesList.oven.description' },
     { icon: 'assets/icons/freezer.png', title: 'services.servicesList.freezer.title', description: 'services.servicesList.freezer.description' },
-    { icon: 'assets/icons/vacuum-cleaner.png', title: 'services.servicesList.vacuumCleaner.title', description: 'services.servicesList.vacuumCleaner.description' },
     { icon: 'assets/icons/dryer.png', title: 'services.servicesList.dryer.title', description: 'services.servicesList.dryer.description' }
   ];
 
@@ -31,16 +30,7 @@ export class ServicesComponent {
   showAll = false;
 
   constructor(private translate: TranslateService) {
-    this.displayedServices = this.services.slice(0, 4); 
+    this.displayedServices = this.services.slice(0, 9); 
   }
 
-  showMore() {
-    this.showAll = true;
-    this.displayedServices = this.services.map(service => ({ ...service, visible: true })); 
-  }
-
-  showLess() {
-    this.showAll = false;
-    this.displayedServices = this.services.slice(0, 4); 
-  }
 }

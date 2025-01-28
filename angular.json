@@ -26,7 +26,10 @@
             ],
             "styles": [
               "src/styles.css",
-               "node_modules/aos/dist/aos.css"
+               "node_modules/aos/dist/aos.css",
+               "node_modules/primeng/resources/themes/saga-blue/theme.css",
+               "node_modules/primeng/resources/primeng.min.css",
+               "node_modules/primeicons/primeicons.css"
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js"
@@ -63,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "repair-site:build:production"
+              "buildTarget": "repair-site:build:production"
             },
             "development": {
-              "browserTarget": "repair-site:build:development"
+              "buildTarget": "repair-site:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "repair-site:build"
+            "buildTarget": "repair-site:build"
           }
         },
         "test": {

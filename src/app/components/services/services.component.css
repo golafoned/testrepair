@@ -1,64 +1,73 @@
 .services {
-  padding: 4rem 1rem;
-
-  h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
+    padding: 4rem 1rem;
   }
-
+  
+  .services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
   .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-
-      .service-card {
-          background: #fff;
-          border: 1px solid #ddd;
-          border-radius: 10px;
-          text-align: center;
-          padding: 2rem;
-          transition: box-shadow 0.3s;
-
-          &:hover {
-              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          }
-
-          img {
-              width: 80px;
-              margin-bottom: 1rem;
-          }
-
-          h3 {
-              font-size: 1.5rem;
-              margin-bottom: 1rem;
-          }
-
-          p {
-              color: #6c757d;
-              margin-bottom: 1.5rem;
-          }
-
-          &.faded {
-              opacity: 0.5; /* Напівпрозорий ефект для невидимих послуг */
-          }
-      }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки за замовчуванням */
+    gap: 2rem; /* Відстань між картками */
   }
-
-  .toggle-button {
-      display: block;
-      margin: 1rem auto;
-      padding: 0.5rem 1.5rem;
-      font-size: 1rem;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-          background-color: #0056b3;
-      }
+  
+  .service-card {
+    background: #fff;
+    background-color: #9AC2C9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    transition: box-shadow 0.3s;
   }
-}
+  
+  .service-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card img {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card p {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Медіа-запити для адаптивності */
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr); /* Дві колонки для планшетів */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Одна колонка для мобільних пристроїв */
+    }
+  
+    .services h2 {
+      font-size: 1.8rem; /* Зменшення шрифту заголовка на мобільних */
+    }
+  
+    .service-card {
+      padding: 1.5rem; /* Зменшення відступів у картках */
+    }
+  
+    .service-card h3 {
+      font-size: 1.3rem; /* Зменшення шрифту заголовка картки */
+    }
+  
+    .service-card p {
+      font-size: 0.9rem; /* Зменшення шрифту опису */
+    }
+  }

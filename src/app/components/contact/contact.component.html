@@ -4,30 +4,42 @@
     <div class="contact-content">
       <div class="contact-form">
         <h3>{{ 'contact.writeToUs' | translate }}</h3>
-        <form (submit)="onSubmit()">
-          <input 
-            type="text" 
+        <form (submit)="onSubmit()" #contactForm="ngForm">
+          <p-inputText 
             [(ngModel)]="name" 
             name="name" 
             [placeholder]="'contact.namePlaceholder' | translate" 
-            required>
-            <input 
-            type="text" 
+            required
+            minlength="2"
+            maxlength="50">
+          </p-inputText>
+
+          <p-inputText 
             [(ngModel)]="phone" 
             name="phone" 
             [placeholder]="'contact.phonePlaceholder' | translate" 
             required 
+            prefix="+"
             mask="(000) 000-0000" 
-            title="Please enter a valid phone number">
-          <textarea 
+            title="Введіть номер телефону у форматі (123) 456-7890"
+            inputmode="numeric" 
+            pattern="^\\(\\d{3}\\) \\d{3}-\\d{4}$">
+          </p-inputText>
+
+          <p-inputTextarea 
             [(ngModel)]="message" 
             name="message" 
             [placeholder]="'contact.messagePlaceholder' | translate" 
             rows="5" 
-            required></textarea>
-          <button type="submit" [disabled]="isLoading">
-            {{ isLoading ? ('contact.sending' | translate) : ('contact.submit' | translate) }}
-          </button>
+            required>
+          </p-inputTextarea>
+
+          <p-button 
+            type="submit" 
+            [disabled]="isLoading || !contactForm.valid" 
+            [label]="isLoading ? ('contact.sending' | translate) : ('contact.submit' | translate)">
+          </p-button>
+
           <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
           <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
         </form>

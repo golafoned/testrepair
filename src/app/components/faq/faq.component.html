@@ -1,0 +1,14 @@
+<section class="faq" id="faq">
+  <div class="container">
+    <h2>{{ 'faq.header' | translate }}</h2>
+    <div class="faq-item" *ngFor="let faq of faqList">
+      <div class="faq-question" (click)="toggleAnswer(faq)">
+        <span>{{ faq.questionKey | translate }}</span>
+        <span class="toggle-icon">{{ faq.open ? '-' : '+' }}</span>
+      </div>
+      <div class="faq-answer" *ngIf="faq.open">
+        <p>{{ faq.answerKey | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>

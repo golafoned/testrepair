@@ -1,48 +1,52 @@
 .about {
-    padding: 4rem 1rem;
-    background-color: #fff;
-    position: relative;
-    overflow: hidden; /* Hide overflow */
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    color: #343a40;
-    margin-bottom: 2rem;
-  }
-  
-  .about-content {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: space-around; /* Space items evenly */
-  }
-  
+  padding: 4rem 1rem;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-item {
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+  background-color: #F7F052; /* Легке підфарбування карток */
+  border-radius: 8px; /* Закруглені кути */
+  padding: 1rem; /* Внутрішній відступ */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+}
+
+.about-item img {
+  width: 80px;
+  height: 80px;
+  margin: 1rem;
+}
+
+.about-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
   .about-item {
-    width: 30%; /* Adjust width as needed */
-    margin: 15px; /* Space between items */
-    text-align: center; /* Center text */
+      width: 100%;
+      margin-bottom: 1rem;
   }
-  
-  .about-item img {
-    width: 80px; /* Set a max width for images */
-    height: 80px; /* Maintain aspect ratio */
-    margin : 1rem; /* Space below the image */
-  }
-  
-  .about-item:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-    transition: transform 0.3s; /* Smooth transition */
-  }
-  
-  @media (max-width: 768px) {
-    .about-item {
-      width: 100%; /* Full width on smaller screens */
-      margin-bottom: 1rem; /* Space below each item */
-    }
-  }
+}

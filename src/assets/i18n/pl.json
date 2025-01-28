@@ -30,38 +30,51 @@
     "success": "Twoja wiadomość została pomyślnie wysłana!",
     "error": "Wystąpił błąd podczas wysyłania Twojej wiadomości."
   },
+  "faq": {
+    "header": "Najczęściej zadawane pytania",
+    "question1": {
+      "question": "Jakie rodzaje urządzeń naprawiacie?",
+      "answer": "Naprawiamy wszystkie rodzaje urządzeń, w tym pralki, lodówki, zmywarki, kuchenki mikrofalowe i wiele innych."
+    },
+    "question2": {
+      "question": "Czy mogę otrzymać darmową wycenę naprawy?",
+      "answer": "Tak, oferujemy darmową wycenę naprawy. Skontaktuj się z nami, a zapewnimy konsultację."
+    },
+    "question3": {
+      "question": "Jak szybko możecie zakończyć naprawę?",
+      "answer": "Czas naprawy zależy od rodzaju urządzenia i złożoności problemu. Zazwyczaj staramy się zakończyć naprawy w ciągu 1-3 dni."
+    },
+    "question4": {
+      "question": "Czy zapewniacie gwarancję na wykonaną pracę?",
+      "answer": "Tak, zapewniamy gwarancję na wszystkie wykonane prace oraz wymienione części. Gwarancja jest ważna przez 6 miesięcy."
+    }
+  },
   "about": {
     "header": "O nas",
     "servicesList": {
       "masterVisit": {
         "title": "Wizyta mistrza i diagnostyka",
-        "description": "Darmowe przy uzgodnieniu naprawy.",
-        "icon": "assets/icons/diagnostics.png"
+        "description": "Darmowe przy uzgodnieniu naprawy."
       },
       "warranty": {
         "title": "Gwarancja do 2 lat",
-        "description": "Na wszystkie rodzaje prac i użyte części.",
-        "icon": "assets/icons/guarantee.png"
+        "description": "Na wszystkie rodzaje prac i użyte części."
       },
       "fastRepair": {
         "title": "Szybka naprawa",
-        "description": "Wykonujemy prace w ciągu jednego dnia po wezwaniu.",
-        "icon": "assets/icons/fast-repair.png"
+        "description": "Wykonujemy prace w ciągu jednego dnia po wezwaniu."
       },
       "originalParts": {
         "title": "Części oryginalne",
-        "description": "Używamy tylko certyfikowanych komponentów.",
-        "icon": "assets/icons/original-parts.png"
+        "description": "Używamy tylko certyfikowanych komponentów."
       },
       "experiencedMasters": {
         "title": "Doświadczeni mistrzowie",
-        "description": "Ponad 5-letnie doświadczenie i profesjonalne przygotowanie.",
-        "icon": "assets/icons/experienced-team.png"
+        "description": "Ponad 5-letnie doświadczenie i profesjonalne przygotowanie."
       },
       "largestService": {
         "title": "Największy serwis",
-        "description": "Działamy od 2003 roku w Kijowie i Warszawie.",
-        "icon": "assets/icons/largest-service.png"
+        "description": "Działamy od 2003 roku w Kijowie i Warszawie."
       }
     }
   },
@@ -116,20 +129,26 @@
     "title": "Brenady, które naprawiamy"
   },
   "testimonials": {
-    "header": "Opinie klientów",
-    "testimonials": [
-      {
+    "header": "Opinie Klientów",
+    "positive": "Ocena",
+    "totalReviews": "Łączna liczba recenzji",
+    "testimonial1": {
         "name": "Ivan Petrov",
-        "feedback": "Bardzo zadowolony z usługi! Mistrz szybko przyjechał i naprawił moją lodówkę. Polecam wszystkim!"
-      },
-      {
-        "name": "Olena Kowalenko",
-        "feedback": "Pralka działa jak nowa! Wielkie dzięki za szybkość i jakość."
-      },
-      {
-        "name": "Mykola Iwanchuk",
-        "feedback": "Najlepszy serwis w mieście! Wszystko jasne, szybkie i w rozsądnej cenie."
-      }
-    ]
-  }
+        "feedback": "Bardzo zadowolony z usługi! Technik przyjechał szybko i naprawił moją lodówkę. Gorąco polecam wszystkim!",
+        "location": "Lwów, Ukraina",
+        "date": "2023-11-15"
+    },
+    "testimonial2": {
+        "name": "Olena Kovalenko",
+        "feedback": "Pralka działa jak nowa! Dziękuję za szybkość i jakość usług.",
+        "location": "Warszawa, Polska",
+        "date": "2023-11-20"
+    },
+    "testimonial3": {
+        "name": "Mykola Ivanchuk",
+        "feedback": "Najlepsza usługa w mieście! Wszystko było jasne, szybkie i w rozsądnej cenie.",
+        "location": "Gdańsk, Polska",
+        "date": "2023-11-25"
+    }
+}
 }

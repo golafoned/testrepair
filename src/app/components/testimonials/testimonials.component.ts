@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 interface Testimonial {
-  icon: string;
-  name: string;
+  nameKey: string;
   feedback: string;
+  location: string;
+  date: string;
 }
 
 @Component({
@@ -15,19 +15,22 @@ interface Testimonial {
 export class TestimonialsComponent {
   testimonials: Testimonial[] = [
     {
-      icon: 'assets/icons/user1.png',
-      name: 'testimonials.testimonials.0.name',
-      feedback: 'testimonials.testimonials.0.feedback'
+      nameKey: 'testimonials.testimonial1.name',
+      feedback: 'testimonials.testimonial1.feedback',
+      location: 'testimonials.testimonial1.location',
+      date: 'testimonials.testimonial1.date',
     },
     {
-      icon: 'assets/icons/user1.png',
-      name: 'testimonials.testimonials.1.name',
-      feedback: 'testimonials.testimonials.1.feedback'
+      nameKey: 'testimonials.testimonial2.name',
+      feedback: 'testimonials.testimonial2.feedback',
+      location: 'testimonials.testimonial2.location',
+      date: 'testimonials.testimonial2.date',
     },
     {
-      icon: 'assets/icons/user1.png',
-      name: 'testimonials.testimonials.2.name',
-      feedback: 'testimonials.testimonials.2.feedback'
+      nameKey: 'testimonials.testimonial3.name',
+      feedback: 'testimonials.testimonial3.feedback',
+      location: 'testimonials.testimonial3.location',
+      date: 'testimonials.testimonial3.date',
     }
   ];
 }

@@ -1,11 +1,21 @@
 <section class="testimonials" id="testimonials">
   <div class="container">
     <h2>{{ 'testimonials.header' | translate }}</h2>
-    <div class="testimonials-scroll">
+    <div class="testimonials-grid">
+      <div class="stats-box">
+        <span class="percentage">95%</span>
+        <p class="positive-reviews">{{ "testimonials.positive" | translate }} →</p>
+        <p class="review-count">400+ {{ "testimonials.totalReviews" | translate }}</p>
+      </div>
       <div *ngFor="let testimonial of testimonials" class="testimonial">
-        <img [src]="testimonial.icon" alt="{{ testimonial.name }}">
-        <h3>{{ testimonial.name | translate }}</h3>
         <p>{{ testimonial.feedback | translate }}</p>
+        <div class="testimonial-footer">
+          <div class="author-location">
+            <span class="author">{{ testimonial.nameKey | translate }}</span>
+            <span class="location">{{ testimonial.location | translate }}</span>
+          </div>
+          <span class="date">{{ testimonial.date | translate }}</span>
+        </div>
       </div>
     </div>
   </div>

@@ -2,75 +2,109 @@
   padding: 4rem 1rem;
 
   h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    color: #333;
   }
 
-  .testimonials-scroll {
-      display: flex;
-      gap: 1.5rem;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding-bottom: 1rem;
+  .stats-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    margin: 0 auto 2rem;
+    
+    .percentage {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #007bff;
+    }
 
-      .testimonial {
-          min-width: 280px;
-          flex: 0 0 auto;
-          background: #fff;
-          border-radius: 10px;
-          padding: 1.5rem;
-          text-align: center;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          transition: transform 0.2s;
+    .positive-reviews {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-          &:hover {
-              transform: translateY(-5px);
-          }
+    .review-count {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+  }
 
-          img {
-              width: 80px;
-              height: 80px;
-              border-radius: 50%;
-              margin-bottom: 1rem;
-          }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 
-          h3 {
-              font-size: 1.25rem;
-              color: #007bff;
-              margin-bottom: 0.5rem;
-          }
+    .testimonial {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.75rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
 
-          p {
-              font-size: 1rem;
-              color: #6c757d;
-          }
+      &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
       }
-  }
 
-  .testimonials-scroll::-webkit-scrollbar {
-      height: 8px;
-  }
+      p {
+        font-size: 1.1rem;
+        color: #6c757d;
+        line-height: 1.6;
+        margin-bottom: 1.75rem;
+        font-style: italic;
+      }
 
-  .testimonials-scroll::-webkit-scrollbar-thumb {
-      background: #007bff;
-      border-radius: 5px;
-  }
+      .testimonial-footer {
+        font-size: 0.9rem;
+        color: #6c757d;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-  .testimonials-scroll::-webkit-scrollbar-track {
-      background: #e9ecef;
+        .author-location {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        .author {
+          font-weight: bold;
+          color: #007bff;
+        }
+
+        .location {
+          font-style: italic;
+          color: #495057;
+        }
+
+        .date {
+          color: #adb5bd;
+          margin-top: 0.2rem;
+        }
+      }
+    }
   }
 }
 
-/* Адаптивні стилі */
 @media (max-width: 768px) {
-  .testimonials-scroll {
-      flex-direction: column; /* Вертикальне вирівнювання на мобільних */
-      align-items: center; /* Центрування вмісту */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-box {
+    max-width: 100%;
   }
 
   .testimonial {
-      min-width: 90%; /* Зменшення ширини для мобільних */
-      margin-bottom: 1.5rem; /* Відступ між відгуками */
+    padding: 1.25rem;
   }
 }

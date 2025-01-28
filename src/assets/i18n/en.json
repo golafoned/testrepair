@@ -109,21 +109,46 @@
       }
     }
   },
+    "faq": {
+      "header": "Frequently Asked Questions",
+      "question1": {
+        "question": "What types of appliances do you repair?",
+        "answer": "We repair all types of appliances, including washing machines, refrigerators, dishwashers, microwaves, and more."
+      },
+      "question2": {
+        "question": "Can I get a free repair estimate?",
+        "answer": "Yes, we offer a free repair estimate. Just contact us, and we will provide you with a consultation."
+      },
+      "question3": {
+        "question": "How quickly can you complete the repair?",
+        "answer": "The repair time depends on the type of appliance and the complexity of the issue. We usually aim to complete repairs within 1-3 days."
+      },
+      "question4": {
+        "question": "Do you provide a warranty on the work done?",
+        "answer": "Yes, we provide a warranty on all work performed and parts replaced. The warranty is valid for 6 months."
+      }
+  },
   "testimonials": {
     "header": "Customer Reviews",
-    "testimonials": [
-      {
+    "positive": "Rating",
+    "totalReviews": "Total Reviews",
+    "testimonial1": {
         "name": "Ivan Petrov",
-        "feedback": "Very satisfied with the service! The master arrived quickly and repaired my refrigerator. I recommend it to everyone!"
-      },
-      {
+        "feedback": "Very satisfied with the service! The technician arrived quickly and repaired my refrigerator. I highly recommend it to everyone!",
+        "location": "Lviv, Ukraine",
+        "date": "2023-11-15"
+    },
+    "testimonial2": {
         "name": "Olena Kovalenko",
-        "feedback": "The washing machine works like new! Thank you for your promptness and quality."
-      },
-      {
+        "feedback": "The washing machine works like new! I appreciate your promptness and quality of service.",
+        "location": "Warsaw, Poland",
+        "date": "2023-11-20"
+    },
+    "testimonial3": {
         "name": "Mykola Ivanchuk",
-        "feedback": "The best service in the city! Everything is clear, fast, and at a reasonable price."
-      }
-    ]
-  }
+        "feedback": "The best service in the city! Everything was clear, fast, and at a reasonable price.",
+        "location": "Gdansk, Poland",
+        "date": "2023-11-25"
+    }
+}
 }
