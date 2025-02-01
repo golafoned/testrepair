@@ -1,0 +1,174 @@
+{
+  "navbar": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "about": "O nas",
+    "testimonials": "Referencje",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Naprawa sprzętu AGD w Twoim mieście",
+    "subtitle": "Szybko, jakościowo i z gwarancją!",
+    "orderRepair": "Zamów naprawę"
+  },
+  "contact": {
+    "header": "Zostaw zgłoszenie na telefon",
+    "namePlaceholder": "Twoje imię",
+    "phonePlaceholder": "Twój numer telefonu",
+    "addressPlaceholder": "Twój adres",
+    "appliancePlaceholder": "Wybierz typ urządzenia",
+    "messagePlaceholder": "Twoja wiadomość",
+    "submit": "Wyślij",
+    "sending": "Wysyłanie...",
+    "success": {
+      "messageSent": "Twoja wiadomość została wysłana pomyślnie!"
+    },
+    "error": {
+      "phoneFormat": "Proszę wprowadzić numer telefonu w formacie (123) 456-7890.",
+      "fillAllFields": "Proszę wypełnić wszystkie pola.",
+      "sending": "Wystąpił błąd podczas wysyłania wiadomości."
+    },
+    "newMessage": "Nowa wiadomość",
+    "contactInfo": "Informacje kontaktowe",
+    "workingHours": "Godziny pracy",
+    "workingHoursValue": "Poniedziałek - Piątek: 9:00 - 18:00",
+    "address": "Adres",
+    "addressValue": "123 Główna Ulica, Kijów, Ukraina",
+    "name": "Imię",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "appliance": {
+      "fridge": "Lodówka",
+      "washingMachine": "Pralka",
+      "dishwasher": "Zmywarka",
+      "airConditioner": "Klimatyzator",
+      "cooktop": "Płyta grzewcza",
+      "electricStove": "Piekarnik elektryczny",
+      "oven": "Piekarnik",
+      "freezer": "Zamrażarka",
+      "dryer": "Suszarka"
+    }
+  },
+  "faq": {
+    "header": "Najczęściej zadawane pytania",
+    "question1": {
+      "question": "Jakie rodzaje urządzeń naprawiacie?",
+      "answer": "Naprawiamy wszystkie rodzaje urządzeń, w tym pralki, lodówki, zmywarki, kuchenki mikrofalowe i wiele innych."
+    },
+    "question2": {
+      "question": "Czy mogę otrzymać darmową wycenę naprawy?",
+      "answer": "Tak, oferujemy darmową wycenę naprawy. Skontaktuj się z nami, a zapewnimy konsultację."
+    },
+    "question3": {
+      "question": "Jak szybko możecie zakończyć naprawę?",
+      "answer": "Czas naprawy zależy od rodzaju urządzenia i złożoności problemu. Zazwyczaj staramy się zakończyć naprawy w ciągu 1-3 dni."
+    },
+    "question4": {
+      "question": "Czy zapewniacie gwarancję na wykonaną pracę?",
+      "answer": "Tak, zapewniamy gwarancję na wszystkie wykonane prace oraz wymienione części. Gwarancja jest ważna przez 6 miesięcy."
+    }
+  },
+  "about": {
+    "header": "O nas",
+    "servicesList": {
+      "masterVisit": {
+        "title": "Wizyta mistrza i diagnostyka",
+        "description": "Darmowe przy uzgodnieniu naprawy."
+      },
+      "warranty": {
+        "title": "Gwarancja do 2 lat",
+        "description": "Na wszystkie rodzaje prac i użyte części."
+      },
+      "fastRepair": {
+        "title": "Szybka naprawa",
+        "description": "Wykonujemy prace w ciągu jednego dnia po wezwaniu."
+      },
+      "originalParts": {
+        "title": "Części oryginalne",
+        "description": "Używamy tylko certyfikowanych komponentów."
+      },
+      "experiencedMasters": {
+        "title": "Doświadczeni mistrzowie",
+        "description": "Ponad 5-letnie doświadczenie i profesjonalne przygotowanie."
+      },
+      "largestService": {
+        "title": "Największy serwis",
+        "description": "Działamy od 2003 roku w Kijowie i Warszawie."
+      }
+    }
+  },
+  "services": {
+    "header": "Nasze usługi",
+    "showMore": "Pokaż więcej",
+    "showLess": "Pokaż mniej",
+    "servicesList": {
+      "fridge": {
+        "title": "Naprawa lodówek",
+        "description": "Diagnoza i naprawa wszelkich usterek lodówek."
+      },
+      "washingMachine": {
+        "title": "Naprawa pralek",
+        "description": "Szybka naprawa pralek wszystkich marek."
+      },
+      "dishwasher": {
+        "title": "Naprawa zmywarek",
+        "description": "Profesjonalna naprawa zmywarek z gwarancją."
+      },
+      "airConditioner": {
+        "title": "Naprawa klimatyzatorów",
+        "description": "Serwis i naprawa wszelkich klimatyzatorów."
+      },
+      "cooktop": {
+        "title": "Naprawa płyt grzewczych",
+        "description": "Naprawa elektrycznych i gazowych płyt grzewczych."
+      },
+      "electricStove": {
+        "title": "Naprawa kuchenek elektrycznych",
+        "description": "Usuwanie usterek w kuchenkach elektrycznych."
+      },
+      "oven": {
+        "title": "Naprawa piekarników",
+        "description": "Wysokiej jakości naprawa piekarników z użyciem oryginalnych części."
+      },
+      "freezer": {
+        "title": "Naprawa zamrażarek",
+        "description": "Naprawa zamrażarek wszystkich modeli i rozmiarów."
+      },
+      "vacuumCleaner": {
+        "title": "Naprawa odkurzaczy",
+        "description": "Przywrócimy życie Twojemu odkurzaczowi każdej marki."
+      },
+      "dryer": {
+        "title": "Naprawa suszarek do ubrań",
+        "description": "Szybka naprawa usterek suszarek do ubrań."
+      }
+    }
+  },
+  "brands": {
+    "title": "Brenady, które naprawiamy"
+  },
+  "testimonials": {
+    "header": "Opinie Klientów",
+    "positive": "Ocena",
+    "totalReviews": "Łączna liczba recenzji",
+    "testimonial1": {
+        "name": "Ivan Petrov",
+        "feedback": "Bardzo zadowolony z usługi! Technik przyjechał szybko i naprawił moją lodówkę. Gorąco polecam wszystkim!",
+        "location": "Lwów, Ukraina",
+        "date": "2023-11-15"
+    },
+    "testimonial2": {
+        "name": "Olena Kovalenko",
+        "feedback": "Pralka działa jak nowa! Dziękuję za szybkość i jakość usług.",
+        "location": "Warszawa, Polska",
+        "date": "2023-11-20"
+    },
+    "testimonial3": {
+        "name": "Mykola Ivanchuk",
+        "feedback": "Najlepsza usługa w mieście! Wszystko było jasne, szybkie i w rozsądnej cenie.",
+        "location": "Gdańsk, Polska",
+        "date": "2023-11-25"
+    }
+}
+}

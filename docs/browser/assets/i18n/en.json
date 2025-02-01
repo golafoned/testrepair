@@ -1,0 +1,174 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Appliance Repair in Your City",
+    "subtitle": "Fast, quality, and guaranteed!",
+    "orderRepair": "Order Repair"
+  },
+  "contact": {
+    "header": "Leave a request for a call",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "Your phone number",
+    "addressPlaceholder": "Your address",
+    "appliancePlaceholder": "Select an appliance type",
+    "messagePlaceholder": "Your message",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "success": {
+      "messageSent": "Your message has been sent successfully!"
+    },
+    "error": {
+      "phoneFormat": "Please enter the phone number in the format (123) 456-7890.",
+      "fillAllFields": "Please fill in all fields.",
+      "sending": "An error occurred while sending your message."
+    },
+    "contactInfo":  "Contact Information",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Monday - Friday: 9 AM - 6 PM",
+    "address": "Address",
+    "addressValue": "123 Main Street, Kyiv, Ukraine",
+    "newMessage": "New message",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "appliance": {
+      "fridge": "Fridge",
+      "washingMachine": "Washing Machine",
+      "dishwasher": "Dishwasher",
+      "airConditioner": "Air Conditioner",
+      "cooktop": "Cooktop",
+      "electricStove": "Electric Stove",
+      "oven": "Oven",
+      "freezer": "Freezer",
+      "dryer": "Dryer"
+    }
+  },
+  "about": {
+    "header": "About Us",
+    "servicesList": {
+      "masterVisit": {
+        "title": "Master Visit and Diagnostics",
+        "description": "Free with agreement for repair."
+      },
+      "warranty": {
+        "title": "Up to 2 Years Warranty",
+        "description": "On all types of work and used parts."
+      },
+      "fastRepair": {
+        "title": "Fast Repair",
+        "description": "We complete work within a day after the call."
+      },
+      "originalParts": {
+        "title": "Original Parts",
+        "description": "We only use certified components."
+      },
+      "experiencedMasters": {
+        "title": "Experienced Masters",
+        "description": "Over 5 years of experience and professional training."
+      },
+      "largestService": {
+        "title": "Largest Service",
+        "description": "Operating since 2003 in Kyiv and Warsaw."
+      }
+    }
+  },
+  "brands": {
+    "title": "Brands We Repair"
+  },
+  "services": {
+    "header": "Our Services",
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "servicesList": {
+      "fridge": {
+        "title": "Fridge Repair",
+        "description": "Diagnostics and repair of any fridge malfunctions."
+      },
+      "washingMachine": {
+        "title": "Washing Machine Repair",
+        "description": "Quick repair of all brands of washing machines."
+      },
+      "dishwasher": {
+        "title": "Dishwasher Repair",
+        "description": "Professional dishwasher repair with a warranty."
+      },
+      "airConditioner": {
+        "title": "Air Conditioner Repair",
+        "description": "Service and repair of any air conditioners."
+      },
+      "cooktop": {
+        "title": "Cooktop Repair",
+        "description": "Repair of electric and gas cooktops."
+      },
+      "electricStove": {
+        "title": "Electric Stove Repair",
+        "description": "Fixing issues with electric stoves."
+      },
+      "oven": {
+        "title": "Oven Repair",
+        "description": "Quality oven repair using original parts."
+      },
+      "freezer": {
+        "title": "Freezer Repair",
+        "description": "Repair of freezers of any models and sizes."
+      },
+      "vacuumCleaner": {
+        "title": "Vacuum Cleaner Repair",
+        "description": "Bringing your vacuum cleaner back to life."
+      },
+      "dryer": {
+        "title": "Dryer Repair",
+        "description": "Quick fixing of dryer malfunctions."
+      }
+    }
+  },
+    "faq": {
+      "header": "Frequently Asked Questions",
+      "question1": {
+        "question": "What types of appliances do you repair?",
+        "answer": "We repair all types of appliances, including washing machines, refrigerators, dishwashers, microwaves, and more."
+      },
+      "question2": {
+        "question": "Can I get a free repair estimate?",
+        "answer": "Yes, we offer a free repair estimate. Just contact us, and we will provide you with a consultation."
+      },
+      "question3": {
+        "question": "How quickly can you complete the repair?",
+        "answer": "The repair time depends on the type of appliance and the complexity of the issue. We usually aim to complete repairs within 1-3 days."
+      },
+      "question4": {
+        "question": "Do you provide a warranty on the work done?",
+        "answer": "Yes, we provide a warranty on all work performed and parts replaced. The warranty is valid for 6 months."
+      }
+  },
+  "testimonials": {
+    "header": "Customer Reviews",
+    "positive": "Rating",
+    "totalReviews": "Total Reviews",
+    "testimonial1": {
+        "name": "Ivan Petrov",
+        "feedback": "Very satisfied with the service! The technician arrived quickly and repaired my refrigerator. I highly recommend it to everyone!",
+        "location": "Lviv, Ukraine",
+        "date": "2023-11-15"
+    },
+    "testimonial2": {
+        "name": "Olena Kovalenko",
+        "feedback": "The washing machine works like new! I appreciate your promptness and quality of service.",
+        "location": "Warsaw, Poland",
+        "date": "2023-11-20"
+    },
+    "testimonial3": {
+        "name": "Mykola Ivanchuk",
+        "feedback": "The best service in the city! Everything was clear, fast, and at a reasonable price.",
+        "location": "Gdansk, Poland",
+        "date": "2023-11-25"
+    }
+}
+}
