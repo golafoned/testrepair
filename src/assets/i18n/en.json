@@ -12,23 +12,43 @@
     "orderRepair": "Order Repair"
   },
   "contact": {
-    "header": "Contact Us",
-    "contactInfo": "Contact Information",
-    "workingHours": "Working Hours",
-    "workingHoursValue": "Mon-Fri: 9:00 AM - 6:00 PM",
-    "address": "Address",
-    "addressValue": "1 Example St, Kyiv, Ukraine",
-    "phone": "Phone",
-    "phonePlaceholder": "Your Phone Number", 
-    "email": "Email",
-    "writeToUs": "Write to Us",
-    "namePlaceholder": "Your Name",
-    "emailPlaceholder": "Your Email",
-    "messagePlaceholder": "Your Message",
+    "header": "Leave a request for a call",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "Your phone number",
+    "addressPlaceholder": "Your address",
+    "appliancePlaceholder": "Select an appliance type",
+    "messagePlaceholder": "Your message",
     "submit": "Submit",
     "sending": "Sending...",
-    "success": "Your message has been sent successfully!",
-    "error": "There was an error sending your message."
+    "success": {
+      "messageSent": "Your message has been sent successfully!"
+    },
+    "error": {
+      "phoneFormat": "Please enter the phone number in the format (123) 456-7890.",
+      "fillAllFields": "Please fill in all fields.",
+      "sending": "An error occurred while sending your message."
+    },
+    "contactInfo":  "Contact Information",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Monday - Friday: 9 AM - 6 PM",
+    "address": "Address",
+    "addressValue": "123 Main Street, Kyiv, Ukraine",
+    "newMessage": "New message",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "appliance": {
+      "fridge": "Fridge",
+      "washingMachine": "Washing Machine",
+      "dishwasher": "Dishwasher",
+      "airConditioner": "Air Conditioner",
+      "cooktop": "Cooktop",
+      "electricStove": "Electric Stove",
+      "oven": "Oven",
+      "freezer": "Freezer",
+      "dryer": "Dryer"
+    }
   },
   "about": {
     "header": "About Us",

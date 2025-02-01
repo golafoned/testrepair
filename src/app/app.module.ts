@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -10,15 +13,14 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FaqComponent } from './components/faq/faq.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrandsComponent } from './components/brands/brands.component';
-import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
+import { provideNgxMask, NgxMaskDirective } from 'ngx-mask';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,32 +32,33 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeroComponent,
     AboutComponent,
     ServicesComponent,
-    FaqComponent,
     TestimonialsComponent,
     ContactComponent,
     NavbarComponent,
+    FaqComponent,
     FooterComponent,
-    BrandsComponent
+    BrandsComponent,
   ],
   imports: [
     BrowserModule,
+    NgxMaskDirective,
+    BrowserAnimationsModule, 
+    HttpClientModule,
+    DropdownModule, 
+    FormsModule,
+    AppRoutingModule,
     InputTextModule,
     ButtonModule,
-    FormsModule,
     MenubarModule,
-    HttpClientModule,
-    AppRoutingModule,
-    NgxMaskDirective,
-    NgxMaskPipe,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [provideNgxMask()],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

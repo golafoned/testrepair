@@ -1,42 +1,57 @@
 <section class="contact" id="contact">
   <div class="container">
-    <h2>{{ 'contact.header' | translate }}</h2>
-    <div class="contact-content">
-      <div class="contact-form">
-        <h3>{{ 'contact.writeToUs' | translate }}</h3>
-        <form (submit)="onSubmit()" #contactForm="ngForm">
-          <input 
-            type="text" 
-            [(ngModel)]="name" 
-            name="name" 
-            [placeholder]="'contact.namePlaceholder' | translate" 
-            required
-            minlength="2"
-            maxlength="50">
-          <input 
-            type="text" 
-            [(ngModel)]="phone" 
-            name="phone" 
-            [placeholder]="'contact.phonePlaceholder' | translate" 
-            required 
-            prefix="+"
-            mask="(000) 000-0000" 
-            title="Введіть номер телефону у форматі (123) 456-7890"
-            inputmode="numeric" 
-            pattern="^\\(\\d{3}\\) \\d{3}-\\d{4}$">
-          <textarea 
-            [(ngModel)]="message" 
-            name="message" 
-            [placeholder]="'contact.messagePlaceholder' | translate" 
-            rows="5" 
-            required></textarea>
-          <button type="submit" [disabled]="isLoading || !contactForm.valid">
-            {{ isLoading ? ('contact.sending' | translate) : ('contact.submit' | translate) }}
-          </button>
-          <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
-          <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
-        </form>
+      <h2>{{ 'contact.header' | translate }}</h2>
+      <div class="contact-content">
+          <div class="contact-form">
+              <form (submit)="onSubmit()" #contactForm="ngForm">
+                  <input
+                      type="text"
+                      [(ngModel)]="name"
+                      name="name"
+                      [placeholder]="'contact.namePlaceholder' | translate"
+                      required
+                      minlength="2"
+                      maxlength="50"
+                  />
+                  <input
+                      type="text"
+                      [(ngModel)]="phone"
+                      name="phone"
+                      [placeholder]="'contact.phonePlaceholder' | translate"
+                      required
+                      mask="(000) 000-0000"
+                      title="{{ 'contact.phoneFormatTitle' | translate }}"
+                      inputmode="numeric"
+                  />
+                  <input
+                      type="text"
+                      [(ngModel)]="address"
+                      name="address"
+                      [placeholder]="'contact.addressPlaceholder' | translate"
+                      required
+                  />
+                  <select
+                      [(ngModel)]="applianceType"
+                      name="applianceType"
+                      required
+                  >
+                      <option value="" disabled selected>{{ 'contact.appliancePlaceholder' | translate }}</option>
+                      <option *ngFor="let option of applianceOptions" [value]="option.value">{{ option.label }}</option>
+                  </select>
+                  <textarea
+                      [(ngModel)]="message"
+                      name="message"
+                      [placeholder]="'contact.messagePlaceholder' | translate"
+                      rows="5"
+                      required
+                  ></textarea>
+                  <button type="submit" [disabled]="isLoading || !contactForm.valid">
+                      {{ isLoading ? ('contact.sending' | translate) : ('contact.submit' | translate) }}
+                  </button>
+                  <p *ngIf="successMessage" class="success">{{ successMessage | translate }}</p>
+                  <p *ngIf="errorMessage" class="error">{{ errorMessage | translate }}</p>
+              </form>
+          </div>
       </div>
-    </div>
   </div>
 </section>

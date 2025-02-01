@@ -12,23 +12,43 @@
     "orderRepair": "Замовити ремонт"
   },
   "contact": {
-    "header": "Зв'яжіться з нами",
-    "contactInfo": "Контактна інформація",
-    "workingHours": "Години роботи",
-    "workingHoursValue": "Пн-Пт: 9:00 - 18:00",
-    "address": "Адреса",
-    "addressValue": "вул. Прикладна, 1, Київ, Україна",
-    "phone": "Телефон",
-    "phonePlaceholder": "Ваш номер телефону",
-    "email": "Email",
-    "writeToUs": "Напишіть нам",
+    "header": "Залишити заявку на дзвінок",
     "namePlaceholder": "Ваше ім'я",
-    "emailPlaceholder": "Ваш email",
+    "phonePlaceholder": "Ваш номер телефону",
+    "addressPlaceholder": "Ваша адреса",
+    "appliancePlaceholder": "Виберіть тип приладу",
     "messagePlaceholder": "Ваше повідомлення",
     "submit": "Відправити",
     "sending": "Відправка...",
-    "success": "Ваше повідомлення надіслано успішно!",
-    "error": "Сталася помилка при відправці вашого повідомлення."
+    "success": {
+      "messageSent": "Ваше повідомлення надіслано успішно!"
+    },
+    "error": {
+      "phoneFormat": "Будь ласка, введіть номер телефону у форматі (123) 456-7890.",
+      "fillAllFields": "Будь ласка, заповніть усі поля.",
+      "sending": "Сталася помилка при відправці вашого повідомлення."
+    },
+    "contactInfo": "Контактна інформація",
+    "workingHours": "Години роботи",
+    "workingHoursValue": "Понеділок - П’ятниця: 9:00 - 18:00",
+    "address": "Адреса",
+    "addressValue": "123 Головна вулиця, Київ, Україна",
+    "newMessage": "Нове повідомлення",
+    "name": "Ім'я",
+    "email": "Email",
+    "phone": "Телефон",
+    "message": "Повідомлення",
+    "appliance": {
+      "fridge": "Холодильник",
+      "washingMachine": "Пральна машина",
+      "dishwasher": "Посудомийна машина",
+      "airConditioner": "Кондиціонер",
+      "cooktop": "Варильна панель",
+      "electricStove": "Електрична плита",
+      "oven": "Духовка",
+      "freezer": "Морозильник",
+      "dryer": "Сушарка"
+    }
   },
   "brands": {
     "title": "Бренди, які ми ремонтуємо",

@@ -1,73 +1,81 @@
 .services {
-    padding: 4rem 1rem;
-  }
-  
-  .services h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
+  padding: 4rem 1rem;
+  background-color: #E2E8DD; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.5rem; 
+  margin-bottom: 2rem;
+  color: #697268; 
+  font-weight: 600; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem; 
+}
+
+.service-card {
+  background: #B7D1DA;
+  border: 1px solid #95A3A4; 
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  transition: box-shadow 0.3s, transform 0.3s; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #697268; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+.service-card p {
+  color: #6c757d; 
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif; 
+}
+
+@media (max-width: 1024px) {
   .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Три колонки за замовчуванням */
-    gap: 2rem; /* Відстань між картками */
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .services h2 {
+    font-size: 1.8rem; 
+  }
+
   .service-card {
-    background: #fff;
-    background-color: #9AC2C9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-    padding: 2rem;
-    transition: box-shadow 0.3s;
+    padding: 1.5rem; 
   }
-  
-  .service-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .service-card img {
-    width: 80px;
-    margin-bottom: 1rem;
-  }
-  
+
   .service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem; 
   }
-  
+
   .service-card p {
-    color: #6c757d;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
   }
-  
-  /* Медіа-запити для адаптивності */
-  @media (max-width: 1024px) {
-    .services-grid {
-      grid-template-columns: repeat(2, 1fr); /* Дві колонки для планшетів */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .services-grid {
-      grid-template-columns: 1fr; /* Одна колонка для мобільних пристроїв */
-    }
-  
-    .services h2 {
-      font-size: 1.8rem; /* Зменшення шрифту заголовка на мобільних */
-    }
-  
-    .service-card {
-      padding: 1.5rem; /* Зменшення відступів у картках */
-    }
-  
-    .service-card h3 {
-      font-size: 1.3rem; /* Зменшення шрифту заголовка картки */
-    }
-  
-    .service-card p {
-      font-size: 0.9rem; /* Зменшення шрифту опису */
-    }
-  }
+}

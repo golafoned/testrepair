@@ -1,28 +1,36 @@
 .brand-icons {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  .brand-icons h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #343a40;
-  }
-  
-  .brands__list {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center items */
-  }
-  
-  .brands-item-list__item {
-    margin: 10px; /* Space between items */
-  }
-  
-  .brands-item-list__img {
-    max-width: 100px; /* Set a max width for images */
-    height: auto; /* Maintain aspect ratio */
-  }
+  background-color: #E2E8DD; 
+  padding: 40px 0;
+  text-align: center; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+.brand-icons h2 {
+  margin-bottom: 20px; 
+  font-size: 2.5rem; 
+  color: #768182; 
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600; 
+}
+
+.brands__list {
+  list-style: none;
+  padding: 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.brands-item-list__item {
+  margin: 10px; 
+}
+
+.brands-item-list__img {
+  max-width: 120px;
+  height: auto;
+  transition: transform 0.3s; 
+}
+
+.brands-item-list__item:hover .brands-item-list__img {
+  transform: scale(1.1); 
+}

@@ -12,23 +12,43 @@
     "orderRepair": "Zamów naprawę"
   },
   "contact": {
-    "header": "Skontaktuj się z nami",
-    "contactInfo": "Informacje kontaktowe",
-    "workingHours": "Godziny pracy",
-    "workingHoursValue": "Pon-Pt: 9:00 - 18:00",
-    "address": "Adres",
-    "addressValue": "ul. Przykład 1, Kijów, Ukraina",
-    "phone": "Telefon",
-    "phonePlaceholder": "Twój numer telefonu",
-    "email": "Email",
-    "writeToUs": "Napisz do nas",
+    "header": "Zostaw zgłoszenie na telefon",
     "namePlaceholder": "Twoje imię",
-    "emailPlaceholder": "Twój email",
+    "phonePlaceholder": "Twój numer telefonu",
+    "addressPlaceholder": "Twój adres",
+    "appliancePlaceholder": "Wybierz typ urządzenia",
     "messagePlaceholder": "Twoja wiadomość",
     "submit": "Wyślij",
     "sending": "Wysyłanie...",
-    "success": "Twoja wiadomość została pomyślnie wysłana!",
-    "error": "Wystąpił błąd podczas wysyłania Twojej wiadomości."
+    "success": {
+      "messageSent": "Twoja wiadomość została wysłana pomyślnie!"
+    },
+    "error": {
+      "phoneFormat": "Proszę wprowadzić numer telefonu w formacie (123) 456-7890.",
+      "fillAllFields": "Proszę wypełnić wszystkie pola.",
+      "sending": "Wystąpił błąd podczas wysyłania wiadomości."
+    },
+    "newMessage": "Nowa wiadomość",
+    "contactInfo": "Informacje kontaktowe",
+    "workingHours": "Godziny pracy",
+    "workingHoursValue": "Poniedziałek - Piątek: 9:00 - 18:00",
+    "address": "Adres",
+    "addressValue": "123 Główna Ulica, Kijów, Ukraina",
+    "name": "Imię",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "appliance": {
+      "fridge": "Lodówka",
+      "washingMachine": "Pralka",
+      "dishwasher": "Zmywarka",
+      "airConditioner": "Klimatyzator",
+      "cooktop": "Płyta grzewcza",
+      "electricStove": "Piekarnik elektryczny",
+      "oven": "Piekarnik",
+      "freezer": "Zamrażarka",
+      "dryer": "Suszarka"
+    }
   },
   "faq": {
     "header": "Najczęściej zadawane pytania",

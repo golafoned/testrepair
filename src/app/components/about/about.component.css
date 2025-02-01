@@ -1,8 +1,9 @@
 .about {
   padding: 4rem 1rem;
-  background-color: #fff;
+  background-color: #E2E8DD; 
   position: relative;
   overflow: hidden;
+  font-family: 'Roboto', sans-serif; 
 }
 
 .container {
@@ -12,9 +13,11 @@
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #343a40;
+  font-size: 2.5rem; 
+  color: #175676; 
   margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600; 
 }
 
 .about-content {
@@ -27,10 +30,11 @@
   width: 30%;
   margin: 15px;
   text-align: center;
-  background-color: #F7F052; /* Легке підфарбування карток */
-  border-radius: 8px; /* Закруглені кути */
-  padding: 1rem; /* Внутрішній відступ */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+  background-color: #95A3A4; 
+  border-radius: 8px; 
+  padding: 1.5rem; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .about-item img {
@@ -39,14 +43,25 @@
   margin: 1rem;
 }
 
+.about-item h3 {
+  font-size: 1.5rem;
+  color: #343a40; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-item p {
+  color: #6c757d;
+  font-size: 1rem; 
+}
+
 .about-item:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
   .about-item {
-      width: 100%;
-      margin-bottom: 1rem;
+    width: 100%; 
+    margin-bottom: 1rem; 
   }
 }

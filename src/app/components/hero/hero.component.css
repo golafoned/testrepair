@@ -28,50 +28,68 @@
   z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem; /* Додано для відступів на малих екранах */
+  padding: 0 1rem; 
 }
 
 .text-content {
   max-width: 600px;
-  width: 100%; /* Додаємо ширину 100% для кращої адаптивності */
+  width: 100%;
 }
 
-.text-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
   line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 2rem; 
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1.5rem;
 }
 
 .contact-info {
-  margin-bottom: 1.5rem; /* Відступ між контактами та кнопкою */
+  margin-bottom: 2rem;
 }
 
 .contact-info p {
-  font-size: 1.25rem; /* Розмір шрифту для телефонів */
-  margin: 0.5rem 0; /* Відступи між номерами */
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info i {
+  font-size: 1.8rem; 
+  color: #ffc107; 
 }
 
 .contact-info a {
-  color: #fff; /* Колір тексту для телефонів */
-  text-decoration: none; /* Без підкреслення */
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-  text-decoration: underline; /* Підкреслення при наведенні */
+  text-decoration: underline;
+  color: #abc4aa;
 }
 
 .repair-button {
-  background-color: #007bff;
+  background-color: #426284;
   color: #fff;
   border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
+  padding: 1rem 2rem; 
+  font-size: 1.5rem; 
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-align: center; /* Вирівнювання тексту по центру */
-  width: 100%; /* Кнопка займає всю ширину */
+  text-align: center;
+  width: auto; 
 }
 
 .repair-button:hover {
@@ -79,31 +97,47 @@
 }
 
 @media (max-width: 768px) {
-  .text-content h1 {
-    font-size: 2.5rem; /* Зменшення шрифту заголовка */
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.6rem;
   }
 
   .contact-info p {
-    font-size: 1rem; /* Зменшення шрифту для телефонів */
+    font-size: 1.4rem;
+  }
+
+  .contact-info i {
+    font-size: 1.5rem;
   }
 
   .repair-button {
-    font-size: 0.9rem;
-    padding: 0.5rem; /* Зменшення відступів кнопки */
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .text-content h1 {
-    font-size: 2rem; /* Додаткове зменшення шрифту для дуже малих екранів */
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
   }
 
   .contact-info p {
-    font-size: 0.9rem; /* Зменшення шрифту для дуже малих екранів */
+    font-size: 1.2rem;
+  }
+
+  .contact-info i {
+    font-size: 1.3rem;
   }
 
   .repair-button {
-    font-size: 0.8rem;
-    padding: 0.4rem; /* Зменшення відступів кнопки */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
 }

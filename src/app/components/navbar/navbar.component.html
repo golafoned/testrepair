@@ -1,44 +1,41 @@
-<p-menubar>
-  <div class="logo">
-    <a href="#">RepairSite</a>
-  </div>
-  <div class="menu-toggle" (click)="toggleMenu()">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-  <div class="menu">
-    <ul>
-      <li>
-        <a routerLink="#hero">
-          <i class="pi pi-home"></i> {{ 'navbar.home' | translate }}
-        </a>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="assets/main-logo.png" alt="RepairSite Logo" class="navbar-logo">
+    RepairSite
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#hero" (click)="scrollToSection('hero')">{{ 'navbar.home' | translate }}</a>
       </li>
-      <li>
-        <a routerLink="#services">
-          <i class="pi pi-cog"></i> {{ 'navbar.services' | translate }}
-        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#services" (click)="scrollToSection('services')">{{ 'navbar.services' | translate }}</a>
       </li>
-      <li>
-        <a routerLink="#about">
-          <i class="pi pi-info-circle"></i> {{ 'navbar.about' | translate }}
-        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#about" (click)="scrollToSection('about')">{{ 'navbar.about' | translate }}</a>
       </li>
-      <li>
-        <a routerLink="#testimonials">
-          <i class="pi pi-star"></i> {{ 'navbar.testimonials' | translate }}
-        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#testimonials" (click)="scrollToSection('testimonials')">{{ 'navbar.testimonials' | translate }}</a>
       </li>
-      <li>
-        <a routerLink="#contact">
-          <i class="pi pi-envelope"></i> {{ 'navbar.contact' | translate }}
-        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact" (click)="scrollToSection('contact')">{{ 'navbar.contact' | translate }}</a>
       </li>
-      <li class="language-switcher">
-        <button (click)="switchLang('ua')">UA</button>
-        <button (click)="switchLang('en')">EN</button>
-        <button (click)="switchLang('pl')">PL</button>
+      <li class="nav-item language-switcher">
+        <div class="lang-btns">
+          <button (click)="switchLang('ua')" [class.active]="currentLang === 'ua'">
+            <span class="flag-icon flag-icon-ua"></span> UA
+          </button>
+          <button (click)="switchLang('en')" [class.active]="currentLang === 'en'">
+            <span class="flag-icon flag-icon-gb"></span> EN
+          </button>
+          <button (click)="switchLang('pl')" [class.active]="currentLang === 'pl'">
+            <span class="flag-icon flag-icon-pl"></span> PL
+          </button>
+        </div>        
       </li>
     </ul>
   </div>
-</p-menubar>
+</nav>

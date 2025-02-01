@@ -8,9 +8,10 @@ interface Testimonial {
 }
 
 @Component({
-  selector: 'app-testimonials',
-  templateUrl: './testimonials.component.html',
-  styleUrls: ['./testimonials.component.css']
+    selector: 'app-testimonials',
+    templateUrl: './testimonials.component.html',
+    styleUrls: ['./testimonials.component.css'],
+    standalone: false
 })
 export class TestimonialsComponent {
   testimonials: Testimonial[] = [
@@ -25,6 +26,36 @@ export class TestimonialsComponent {
       feedback: 'testimonials.testimonial2.feedback',
       location: 'testimonials.testimonial2.location',
       date: 'testimonials.testimonial2.date',
+    },
+    {
+      nameKey: 'testimonials.testimonial3.name',
+      feedback: 'testimonials.testimonial3.feedback',
+      location: 'testimonials.testimonial3.location',
+      date: 'testimonials.testimonial3.date',
+    },
+    {
+      nameKey: 'testimonials.testimonial3.name',
+      feedback: 'testimonials.testimonial3.feedback',
+      location: 'testimonials.testimonial3.location',
+      date: 'testimonials.testimonial3.date',
+    },
+    {
+      nameKey: 'testimonials.testimonial3.name',
+      feedback: 'testimonials.testimonial3.feedback',
+      location: 'testimonials.testimonial3.location',
+      date: 'testimonials.testimonial3.date',
+    },
+    {
+      nameKey: 'testimonials.testimonial3.name',
+      feedback: 'testimonials.testimonial3.feedback',
+      location: 'testimonials.testimonial3.location',
+      date: 'testimonials.testimonial3.date',
+    },
+    {
+      nameKey: 'testimonials.testimonial3.name',
+      feedback: 'testimonials.testimonial3.feedback',
+      location: 'testimonials.testimonial3.location',
+      date: 'testimonials.testimonial3.date',
     },
     {
       nameKey: 'testimonials.testimonial3.name',

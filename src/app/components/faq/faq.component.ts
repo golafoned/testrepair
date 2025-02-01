@@ -10,9 +10,10 @@ interface FAQ {
 }
 
 @Component({
-  selector: 'app-faq',
-  templateUrl: './faq.component.html',
-  styleUrls: ['./faq.component.css']
+    selector: 'app-faq',
+    templateUrl: './faq.component.html',
+    styleUrls: ['./faq.component.css'],
+    standalone: false
 })
 export class FaqComponent {
   header: string = '';

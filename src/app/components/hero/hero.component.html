@@ -1,12 +1,23 @@
 <section class="hero" id="hero">
   <div class="container">
     <div class="text-content">
-      <h1>{{ 'hero.title' | translate }}</h1>
+      <h1 class="hero-title">{{ 'hero.title' | translate }}</h1>
+      <h2 class="hero-subtitle">{{ 'hero.subtitle' | translate }}</h2>
+
       <div class="contact-info">
-        <p><a href="tel:+1234567890">Life: +380 (65) 567-89-10</a></p>
-        <p><a href="tel:+0987654321">Kyivstar: +380 (97) 654-32-11</a></p>
+        <p>
+          <i class="pi pi-phone"></i>
+          <a href="tel:+380655678910">Life +380 (65) 567-89-10</a>
+        </p>
+        <p>
+          <i class="pi pi-phone"></i>
+          <a href="tel:+380976543211">Kyivstar +380 (97) 654-32-11</a>
+        </p>
       </div>
-      <button class="repair-button" (click)="scrollToForm()">{{ 'hero.orderRepair' | translate }}</button>
+
+      <button class="repair-button" (click)="scrollToForm()">
+        {{ 'hero.orderRepair' | translate }}
+      </button>
     </div>
   </div>
 </section>
